@@ -29,7 +29,7 @@ $(document).ready(function() {
 		let city = $(this).text();
 
 		$.ajax({
-			url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&lang=ru&appid=' + apiKey,
+			url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&lang=ru&appid=' + apiKey,
 			dataType: "json"
 		}).done(function(json) {
 			$('.weather-block__city').fadeOut(500, function() {$(this).text(json.name)}).fadeIn(300);
