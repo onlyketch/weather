@@ -32,10 +32,10 @@ $(document).ready(function() {
 			url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&lang=ru&appid=' + apiKey,
 			dataType: "json"
 		}).done(function(json) {
-			$('.weather-block__city').fadeOut(500).fadeIn(200, function() {$(this).text(json.name)});
-			$('.weather-block__temp').fadeOut(500).fadeIn(200, function() {$(this).text((json.main.temp - 273.15).toFixed() + "°")});
-			$('.weather-block__feels').fadeOut(500).fadeIn(200, function() {$(this).text("ощущается как: " + (json.main.feels_like - 273.15).toFixed() + "°")});
-			$('.weather-block__description').fadeOut(500).fadeIn(100, function() {$(this).text(json.weather[0].description)});
+			$('.weather-block__city').fadeOut(500, function() {$(this).text(json.name)}).fadeIn(300);
+			$('.weather-block__temp').fadeOut(500, function() {$(this).text((json.main.temp - 273.15).toFixed() + "°")}).fadeIn(300);
+			$('.weather-block__feels').fadeOut(500, function() {$(this).text("ощущается как: " + (json.main.feels_like - 273.15).toFixed() + "°")}).fadeIn(300);
+			$('.weather-block__description').fadeOut(500, function() {$(this).text(json.weather[0].description)}).fadeIn(300);
 
 
 		});
