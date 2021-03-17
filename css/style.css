@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Bebas Neue Cyrillic;
+  src: url("../fonts/Bebas Neue Cyrillic.ttf");
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  font-family: "Bebas Neue Cyrillic", Arial;
+  background: #7BD4FF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7BD4FF), to(#65BCE5));
+  background: -o-linear-gradient(top, #7BD4FF, #65BCE5);
+  background: linear-gradient(to bottom, #7BD4FF, #65BCE5);
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+}
+
+.container {
+  padding-top: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 83.3333333333%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.weather-block {
+  max-width: 659px;
+  min-width: 500px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 659px;
+          flex: 1 1 659px;
+  max-height: 411px;
+  background-color: #007B9A;
+}
+.weather-block__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 28px 40px 21px 40px;
+  height: 85px;
+  background-color: #0192AF;
+}
+.weather-block__dayofweek {
+  font-size: 36px;
+}
+.weather-block__mounth {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.weather-block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 28px 40px 21px 40px;
+}
+.weather-block__temp {
+  margin-top: 26px;
+  font-size: 144px;
+  line-height: 0.7;
+}
+.weather-block__feels {
+  margin-top: 42px;
+}
+.weather-block__description {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.select {
+  width: 723px;
+  margin-left: 100px;
+}
+.select__items {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.select__item {
+  margin: 0 18px 18px 0;
+}
+.select__button {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  outline: none;
+  background: transparent;
+  padding: 15px 26px;
+  font-family: "Bebas Neue Cyrillic", Arial;
+  font-size: 24px;
+  color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.select__button.active {
+  background: #EEB23E;
+  border-color: #EEB23E;
+}
+
+.footer {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+.footer__github {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background: #5CB85C;
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.footer__github:hover {
+  background: #58AE58;
+}
+.footer__url {
+  margin-top: 60px;
+}
+.footer__copy {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1304px) {
+  .container {
+    padding-top: 50px;
+  }
+
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .select {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 70px 0 0 0;
+  }
+}

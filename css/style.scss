@@ -1,0 +1,164 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');  
+@font-face {
+	font-family: Bebas Neue Cyrillic;
+	src: url('../fonts/Bebas Neue Cyrillic.ttf');
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100vh;
+	font-family: 'Bebas Neue Cyrillic', Arial;
+	background: #7BD4FF;
+	background: linear-gradient(to bottom, #7BD4FF, #65BCE5);
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+}
+
+.container {
+	padding-top: 130px;
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1600px / 1920px * 100%;
+	min-width: 500px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+.weather-block {
+	max-width: 659px;
+	min-width: 500px;
+	flex: 1 1 659px;
+	max-height: 411px;
+	background-color: #007B9A;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 28px 40px 21px 40px;
+		height: 85px;
+		background-color: #0192AF;
+	}
+	&__dayofweek {
+		font-size: 36px;
+	}
+	&__mounth {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		box-sizing: border-box;
+		padding: 28px 40px 21px 40px;
+	}
+	&__left {
+	}
+	&__city {
+	}
+	&__temp {
+		margin-top: 26px;
+		font-size: 144px;
+		line-height: 0.7;
+	}
+	&__feels {
+		margin-top: 42px;
+	}
+	&__right {
+	}
+	&__image {
+	}
+	&__description {
+		text-align: right;
+		margin-top: 25px;
+	}
+}
+.select {
+	width: 723px;
+	margin-left: 100px;
+	&__title {
+	}
+	&__items {
+		margin-top: 60px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		margin: 0 18px 18px 0;
+	}
+	&__button {
+		border: 2px solid #fff;
+		border-radius: 25px;
+		outline: none;
+		background: transparent;
+		padding: 15px 26px;
+		font-family: 'Bebas Neue Cyrillic', Arial;
+		font-size: 24px;
+		color: #fff;
+		transition: .2s ease-in-out;
+		cursor: pointer;
+		&.active {
+			background: #EEB23E;
+			border-color: #EEB23E;
+		}
+	}
+}
+
+.footer {
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 50px;
+	margin-top: 80px;
+	&__github {
+		display: inline-block;
+		border-radius: 50px;
+		padding: 20px 30px;
+		text-decoration: none;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: #fff;
+		background: #5CB85C;
+		transition: background .3s ease-in-out;
+		&:hover {
+			background: #58AE58;
+		}
+
+	}
+	&__url {
+		margin-top: 60px;
+	}
+	&__copy {
+		margin-top: 16px;
+	}
+}
+
+@media screen and (max-width: 1304px) {
+	.container {
+		padding-top: 50px;
+	}
+	.main {
+		flex-direction: column;
+	}
+	.select {
+		width: 100%;
+		flex: 1 1 100%;
+		margin: 70px 0 0 0;
+	}
+	
+}
